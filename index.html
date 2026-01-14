@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FollowBuyBD | Grow Your Social Media Faster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">FollowBuy<span>BD</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact" class="btn-primary">Login</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>সোশ্যাল মিডিয়ায় এগিয়ে থাকুন <br><span>Grow Faster & Safely</span></h1>
+            <p>বাংলাদেশের সবচেয়ে সাশ্রয়ী এবং নির্ভরযোগ্য সোশ্যাল মিডিয়া বুস্টিং সার্ভিস। Fast delivery & 100% Secure.</p>
+            <div class="hero-btns">
+                <a href="#services" class="btn-main">Get Started</a>
+                <a href="#how-it-works" class="btn-outline">View Services</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <i class="fab fa-facebook-f icon-fb"></i>
+                    <h3>Facebook Services</h3>
+                    <p>Followers, Page Likes, Video Views and Group Members.</p>
+                    <span class="price">Starting at ৳৫০</span>
+                    <button class="btn-order" onclick="openOrder('Facebook')">Order Now</button>
+                </div>
+                <div class="service-card">
+                    <i class="fab fa-instagram icon-ig"></i>
+                    <h3>Instagram Growth</h3>
+                    <p>Real Followers, Likes, and Reels Views with Instant Start.</p>
+                    <span class="price">Starting at ৳৮০</span>
+                    <button class="btn-order" onclick="openOrder('Instagram')">Order Now</button>
+                </div>
+                <div class="service-card">
+                    <i class="fab fa-youtube icon-yt"></i>
+                    <h3>YouTube Boost</h3>
+                    <p>Watch Time, Subscribers, and High-Retention Views.</p>
+                    <span class="price">Starting at ৳১২০</span>
+                    <button class="btn-order" onclick="openOrder('YouTube')">Order Now</button>
+                </div>
+                <div class="service-card">
+                    <i class="fab fa-tiktok icon-tk"></i>
+                    <h3>TikTok Viral</h3>
+                    <p>Increase your followers and views to go viral quickly.</p>
+                    <span class="price">Starting at ৳৪০</span>
+                    <button class="btn-order" onclick="openOrder('TikTok')">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-works">
+        <div class="container">
+            <h2 class="section-title">কিভাবে অর্ডার করবেন?</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h4>সার্ভিস বেছে নিন</h4>
+                    <p>আপনার পছন্দের সোশ্যাল মিডিয়া সার্ভিস সিলেক্ট করুন।</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h4>লিংক দিন</h4>
+                    <p>আপনার প্রোফাইল বা পোস্টের লিংকটি নির্ভুলভাবে দিন।</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h4>পেমেন্ট করুন</h4>
+                    <p>বিকাশ, নগদ বা রকেটের মাধ্যমে পেমেন্ট সম্পন্ন করুন।</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-about">
+                <h3>FollowBuyBD</h3>
+                <p>Helping you build a stronger digital presence in Bangladesh.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="fab fa-whatsapp"></i> +880 1700-000000</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 FollowBuyBD. All Rights Reserved.
+        </div>
+    </footer>
+
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeOrder()">&times;</span>
+            <h2 id="modalTitle">Order Service</h2>
+            <form id="orderForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="text" placeholder="Profile/Post Link" required>
+                <select>
+                    <option>Select Package</option>
+                    <option>Basic (৳১০০)</option>
+                    <option>Premium (৳৫০০)</option>
+                </select>
+                <button type="submit" class="btn-main">Confirm Order</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
